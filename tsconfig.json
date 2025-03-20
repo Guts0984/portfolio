@@ -13,6 +13,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "plugins": [
       {
         "name": "next"
@@ -22,6 +24,13 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.mdx", // Add this to include .mdx files
+    ".next/types/**/*.ts",
+    "next.config.mjs"
+  ],
   "exclude": ["node_modules"]
 }
