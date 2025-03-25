@@ -55,15 +55,6 @@ function Header() {
           <ul className="lg:space-x-18 ml-auto mr-20 flex space-x-10 text-lg font-medium md:mr-30 md:space-x-14 lg:mr-[3rem] xl:mr-32 xl:space-x-20">
             <li className="relative">
               <Link
-                href="/posts"
-                className="group relative block transition-colors duration-200 hover:text-nebula-purple"
-              >
-                Posts
-                <HoverEffect />
-              </Link>
-            </li>
-            <li className="relative">
-              <Link
                 href="/projects"
                 className="group relative block transition-colors duration-200 hover:text-nebula-purple"
               >
@@ -77,6 +68,15 @@ function Header() {
                 className="group relative block transition-colors hover:text-nebula-purple"
               >
                 Contact
+                <HoverEffect />
+              </Link>
+            </li>
+            <li className="relative">
+              <Link
+                href="/posts"
+                className="group relative block transition-colors duration-200 hover:text-nebula-purple"
+              >
+                Posts
                 <HoverEffect />
               </Link>
             </li>
