@@ -5,7 +5,7 @@ function Diplomas() {
   const words = text.split(" ");
 
   return (
-    <h2 className="relative mx-8 my-24 text-3xl font-bold text-zinc-800 dark:text-zinc-100">
+    <h2 className="relative mx-8 my-16 text-3xl font-bold text-zinc-800 dark:text-zinc-100">
       <Link href="/projects/diplomas" className="group flex items-center">
         <span className="inline-flex flex-wrap transition-all duration-300 group-hover:border-b-4 group-hover:border-nebula-purple group-hover:font-extrabold">
           {words.map((word, index) => (

@@ -19,10 +19,10 @@ function Header() {
   const currentTheme = mounted ? (theme ?? resolvedTheme) : "light"; // Fallback to 'light' before hydration
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 w-full border-b border-star-white/20 bg-zinc-100 py-6 dark:border-star-white/10 dark:bg-zinc-900">
+    <header className="fixed inset-x-0 top-0 z-50 w-full border-b border-zinc-300 bg-zinc-50 py-6 dark:border-zinc-700 dark:bg-background">
       <div className="mx-auto max-w-7xl px-8">
         <nav className="flex items-center">
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="m-2 flex-shrink-0">
             {mounted ? (
               <Image
                 key={currentTheme} // Force re-render on theme change

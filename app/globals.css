@@ -26,6 +26,42 @@ html * {
   transition: background-color 0.5s ease-in-out;
 }
 
+/* For screens up to 1920px */
+@media (max-width: 1920px) {
+  body {
+    transform: scale(0.65);
+    transform-origin: top;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: 100vh; /* Ensure content fits in the viewport */
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+  }
+
+  main {
+    flex-grow: 1; /* Allow main content to expand and take available space */
+    padding-top: 80px; /* Add space below the fixed header */
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+  }
+}
+
 @layer base {
   body {
     @apply bg-background text-foreground;
