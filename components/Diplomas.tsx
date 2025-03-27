@@ -25,6 +25,7 @@ function Diplomas() {
             loop
             autoPlay
             muted
+            playsInline
             className="rounded"
             aria-label="Magnifying glass animation"
           />

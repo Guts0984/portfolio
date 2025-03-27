@@ -26,6 +26,11 @@ html * {
   transition: background-color 0.5s ease-in-out;
 }
 
+video {
+  object-fit: cover;
+  pointer-events: none;
+}
+
 /* For screens up to 1920px */
 @media (max-width: 1920px) {
   body {
