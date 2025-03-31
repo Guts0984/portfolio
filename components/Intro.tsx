@@ -24,7 +24,7 @@ export default function Intro() {
           <div className="flex flex-1 justify-center">
             <div className="border-primary relative h-64 w-64 overflow-hidden rounded-full border-4 md:h-80 md:w-80">
               <Image
-                src="/images/authors/ayanami-rei.jpeg"
+                src="/images/authors/dariy.jpg"
                 alt="Dariy - Front-end Engineer"
                 fill
                 className="object-cover"
