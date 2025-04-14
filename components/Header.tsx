@@ -80,6 +80,15 @@ function Header() {
                 <HoverEffect />
               </Link>
             </li>
+            <li className="relative">
+              <Link
+                href="/resume"
+                className="group relative block transition-colors duration-200 hover:text-nebula-purple"
+              >
+                Resume
+                <HoverEffect />
+              </Link>
+            </li>
           </ul>
 
           <div className="flex-shrink-0">
