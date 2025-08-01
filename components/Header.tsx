@@ -1,4 +1,3 @@
-// components/Header.tsx
 "use client";
 
 import Link from "next/link";
@@ -21,7 +20,7 @@ function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 w-full border-b border-zinc-300 bg-zinc-50 py-6 dark:border-zinc-700 dark:bg-background">
       <div className="mx-auto max-w-7xl px-8">
-        <nav className="flex items-center">
+        <nav className="flex items-center justify-between">
           <Link href="/" className="m-2 flex-shrink-0">
             {mounted ? (
               <Image
@@ -52,47 +51,66 @@ function Header() {
             )}
           </Link>
 
-          <ul className="lg:space-x-18 ml-auto mr-20 flex space-x-10 text-lg font-medium md:mr-30 md:space-x-14 lg:mr-[3rem] xl:mr-32 xl:space-x-20">
-            <li className="relative">
-              <Link
-                href="/projects"
-                className="group relative block transition-colors duration-200 hover:text-nebula-purple"
-              >
-                Projects
-                <HoverEffect />
-              </Link>
-            </li>
-            <li className="relative">
-              <Link
-                href="/contact"
-                className="group relative block transition-colors hover:text-nebula-purple"
-              >
-                Contact
-                <HoverEffect />
-              </Link>
-            </li>
-            <li className="relative">
-              <Link
-                href="/posts"
-                className="group relative block transition-colors duration-200 hover:text-nebula-purple"
-              >
-                Posts
-                <HoverEffect />
-              </Link>
-            </li>
-            <li className="relative">
-              <Link
-                href="/resume"
-                className="group relative block transition-colors duration-200 hover:text-nebula-purple"
-              >
-                Resume
-                <HoverEffect />
-              </Link>
-            </li>
-          </ul>
+          <div className="hidden space-x-10 text-lg font-medium lg:flex">
+            <ul className="flex space-x-10">
+              <li className="relative">
+                <Link
+                  href="/projects"
+                  className="group relative block transition-colors duration-200 hover:text-nebula-purple"
+                >
+                  Projects
+                  <HoverEffect />
+                </Link>
+              </li>
+              <li className="relative">
+                <Link
+                  href="/contact"
+                  className="group relative block transition-colors hover:text-nebula-purple"
+                >
+                  Contact
+                  <HoverEffect />
+                </Link>
+              </li>
+              <li className="relative">
+                <Link
+                  href="/posts"
+                  className="group relative block transition-colors duration-200 hover:text-nebula-purple"
+                >
+                  Posts
+                  <HoverEffect />
+                </Link>
+              </li>
+              <li className="relative">
+                <Link
+                  href="/resume"
+                  className="group relative block transition-colors duration-200 hover:text-nebula-purple"
+                >
+                  Resume
+                  <HoverEffect />
+                </Link>
+              </li>
+            </ul>
 
-          <div className="flex-shrink-0">
-            <ThemeToggle />
+            <div className="flex-shrink-0">
+              <ThemeToggle />
+            </div>
+          </div>
+
+          {/* Hamburger Menu for Mobile */}
+          <div className="flex items-center lg:hidden">
+            <button className="p-2 text-gray-700 dark:text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+              >
+                <path d="M3 6h18M3 12h18M3 18h18" />
+              </svg>
+            </button>
           </div>
         </nav>
       </div>

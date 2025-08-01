@@ -9,6 +9,15 @@ export interface IProject {
 
 export const projects: IProject[] = [
   {
+    title: "Coin-Dash",
+    projectLink: "https://crypto-dash-gamma.vercel.app/",
+    githubLink: "https://github.com/Guts0984/crypto-dash",
+    description:
+      "Track changes in cryptocurrencies with Coin Dash, a modern web application built using Next.js, Tailwind CSS, and TypeScript. Monitor real-time updates and manage your crypto portfolio efficiently with a sleek, user-friendly interface.",
+    date: "2025-08-01",
+    image: "/images/projects/coin.png",
+  },
+  {
     title: "React-pizza",
     projectLink: "https://reactpizza43.netlify.app/",
     githubLink: "https://github.com/Guts0984/react-pizza",

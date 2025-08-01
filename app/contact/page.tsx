@@ -8,7 +8,7 @@ function ContactPage() {
             <p className="font-medium text-nebula-purple dark:text-purple-400">
               Contact me
             </p>
-            <h1 className="mt-2 text-2xl font-semibold md:text-3xl">
+            <h1 className="mt-2 text-center text-2xl font-semibold md:text-left md:text-3xl">
               Get in touch
             </h1>
           </div>

@@ -29,7 +29,7 @@ const DiplomasPage = () => {
   return (
     <main className="grow">
       <section className="py-24">
-        <div className="container mx-auto max-w-7xl">
+        <div className="container mx-auto max-w-7xl px-4">
           <h1 className="mb-12 text-center text-3xl font-bold">My Diplomas</h1>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             {diplomas.map((diploma, index) => (
@@ -57,7 +57,7 @@ const DiplomasPage = () => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
           onClick={closeModal} // Close modal if overlay is clicked
         >
-          <div className="relative">
+          <div className="relative max-h-full max-w-full p-4">
             <button
               onClick={closeModal}
               className="absolute right-0 top-0 p-4 text-2xl text-white"
@@ -69,7 +69,7 @@ const DiplomasPage = () => {
               alt="Selected Diploma"
               width={800} // Larger size for modal view
               height={800} // Larger size for modal view
-              className="rounded-lg"
+              className="max-h-[80vh] max-w-full rounded-lg object-contain"
             />
           </div>
         </div>

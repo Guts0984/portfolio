@@ -11,8 +11,10 @@ function ClientLayout({ children }: { children: React.ReactNode }) {
     <ThemeProvider attribute="class" defaultTheme="system">
       <Header />
       <main className="grow">
-        <section className="py-24">
-          <div className="container mx-auto max-w-7xl">{children}</div>
+        <section className="py-12 md:py-24">
+          <div className="container mx-auto max-w-full px-4 md:max-w-7xl">
+            {children}
+          </div>
         </section>
       </main>
       <Footer />

@@ -25,7 +25,7 @@ export default function Intro() {
             <div className="border-primary relative h-64 w-64 overflow-hidden rounded-full border-4 md:h-80 md:w-80">
               <Image
                 src="/images/authors/dariy.jpg"
-                alt="Dariy - Front-end Engineer"
+                alt="Dariy"
                 fill
                 className="object-cover"
                 priority

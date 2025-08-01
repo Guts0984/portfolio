@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Resume() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-4">
+    <div className="flex min-h-screen items-center justify-center overflow-hidden p-4">
       <div className="w-full max-w-2xl text-center">
-        <h1 className="mb-6 text-4xl font-bold text-zinc-800 dark:text-zinc-100">
+        <h1 className="mb-6 text-3xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-4xl">
           My Resume
         </h1>
 
@@ -12,7 +12,7 @@ export default function Resume() {
           href="/cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center rounded-lg bg-nebula-purple px-6 py-3 text-white shadow-md transition-colors duration-300 hover:bg-purple-700"
+          className="inline-flex items-center justify-center rounded-lg bg-nebula-purple px-6 py-3 text-white shadow-md transition-colors duration-300 hover:bg-purple-700"
         >
           <svg
             className="mr-2 h-6 w-6"
