@@ -9,8 +9,8 @@ import "prismjs/components/prism-json";
 import "prismjs/components/prism-css";
 
 import "prismjs/plugins/toolbar/prism-toolbar.min.css";
-import "prismjs/plugins/toolbar/prism-toolbar.min";
-import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min";
+// import "prismjs/plugins/toolbar/prism-toolbar.min";
+// import "prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min";
 
 function SyntaxHighlight({ children }: { children: React.ReactNode }) {
   useEffect(() => {

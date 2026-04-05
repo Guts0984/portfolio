@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 export default function Intro() {
   return (
@@ -24,7 +23,7 @@ export default function Intro() {
           <div className="flex flex-1 justify-center">
             <div className="border-primary relative h-64 w-64 overflow-hidden rounded-full border-4 md:h-80 md:w-80">
               <Image
-                src="/images/authors/dariy.jpg"
+                src="/images/authors/dariy1.jpg"
                 alt="Dariy"
                 fill
                 className="object-cover"
