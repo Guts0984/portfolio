@@ -9,6 +9,15 @@ export interface IProject {
 
 export const projects: IProject[] = [
   {
+    title: "Semianars-webinars",
+    projectLink: "https://seminar-webinar.com.ua/",
+    githubLink: "https://seminar-webinar.com.ua/",
+    description:
+      "My first commercial project.",
+    date: "2026-09-27",
+    image: "/images/projects/seminars.png",
+  },
+  {
     title: "Coin-Dash",
     projectLink: "https://crypto-dash-gamma.vercel.app/",
     githubLink: "https://github.com/Guts0984/crypto-dash",
