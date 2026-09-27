@@ -1,7 +1,7 @@
 export interface IProject {
   title: string;
   projectLink: string;
-  githubLink: string;
+  githubLink?: string;
   date: string;
   description?: string;
   image: string;
@@ -11,7 +11,6 @@ export const projects: IProject[] = [
   {
     title: "Semianars-webinars",
     projectLink: "https://seminar-webinar.com.ua/",
-    githubLink: "https://seminar-webinar.com.ua/",
     description:
       "My first commercial project.",
     date: "2026-09-27",

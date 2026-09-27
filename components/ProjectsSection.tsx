@@ -51,18 +51,20 @@ function ProjectsSection() {
                     </a>
                   </Button>
 
-                  <Button
-                    asChild
-                    className="rounded-full border border-zinc-300 p-2 text-nebula-purple transition-all duration-300 ease-in-out hover:bg-nebula-purple hover:text-white dark:border-nebula-purple"
-                  >
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  {project.githubLink && (
+                    <Button
+                      asChild
+                      className="rounded-full border border-zinc-300 p-2 text-nebula-purple transition-all duration-300 ease-in-out hover:bg-nebula-purple hover:text-white dark:border-nebula-purple"
                     >
-                      GitHub
-                    </a>
-                  </Button>
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
